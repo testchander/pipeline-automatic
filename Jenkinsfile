@@ -1,11 +1,6 @@
 node{
-stage('test')
-{
-echo "Testing"
-sayHello 'Done'
-}
-stage('build')
-  {
-    echo "building"
-}
+    stage('test'){ 
+      echo "Shared Pipeline Test"
+      sayHello 'Chander'
+    }
 }
