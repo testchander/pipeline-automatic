@@ -5,7 +5,7 @@ node{
     }
     stage('build')
     {
-def scriptContent = libraryResource "org/functions.sh"
+def functions = libraryResource "org/functions.sh"
 sh "chmod +x functions.sh"
 }
 }
