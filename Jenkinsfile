@@ -7,6 +7,8 @@ node{
     {
 def functions = libraryResource "org/functions.sh"
 writeFile file: 'functions.sh', text: functions
+sh "source functions.sh && foofoo"
+echo "bye"
 sh "chmod +x functions.sh"
 }
 }
