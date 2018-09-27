@@ -5,9 +5,9 @@ node{
     }
     stage('build')
     {
-def functions = libraryResource "org/functions.sh"
-writeFile file: 'functions.sh', text: functions
-sh "functions.sh"
+def functions = libraryResource "org/functions.bat"
+writeFile file: 'functions.bat', text: functions
+bat "functions.sh"
 echo "bye"
 
 }
