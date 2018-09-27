@@ -7,7 +7,7 @@ node{
     {
 def functions = libraryResource "org/functions.bat"
 writeFile file: 'functions.bat', text: functions
-bat "functions.sh"
+bat "functions.bat"
 echo "bye"
 
 }
