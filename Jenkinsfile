@@ -6,6 +6,7 @@ node{
     stage('build')
     {
 def functions = libraryResource "org/functions.sh"
+writeFile file: 'functions.sh', text: functions
 sh "chmod +x functions.sh"
 }
 }
