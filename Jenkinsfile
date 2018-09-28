@@ -6,7 +6,7 @@ node{
     stage('build')
     {
 def functions = libraryResource "org/functions.bat"
-writeFile file: 'functions.bat', test: functions
+writeFile file: 'functions.bat' test: 
 bat "functions.bat"
 echo "bye"
 
